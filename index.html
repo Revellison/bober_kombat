@@ -10,7 +10,6 @@
 <script src="jquery-3.7.1.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="wwb19.min.js"></script>
-<script src="vibrate.js"></script>
 </head>
 <body>
 <div id="wb_LayoutGrid4">
@@ -18,7 +17,7 @@
 <div class="row">
 <div class="col-1">
 <div id="wb_Text2">
-<span style="color:#FF8000;font-family:Arial;font-size:16px;"><strong>&quot;kyberbober v1.0&quot; demo</strong></span>
+<span style="color:#FF8000;font-family:Arial;font-size:16px;"><strong>&quot;kyberbober v1.0.0&quot; demo</strong></span>
 </div>
 </div>
 </div>
@@ -29,8 +28,8 @@
 <div class="row">
 <div class="col-1">
 <a id="Button2" href="" onclick="ShowObjectWithEffect('wb_LayoutGrid2', 1, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:82px;height:29px;z-index:2;">Бобер</a>
-<a id="Button1" href="#" onclick="ShowObjectWithEffect('wb_mining_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:109px;height:29px;z-index:3;">Майнинг</a>
-<a id="Button3" href="#" onclick="ShowObjectWithEffect('wb_quests_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:86px;height:29px;z-index:4;">Задания</a>
+<a id="Button1" href="./bobr.html" onclick="ShowObjectWithEffect('wb_mining_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:109px;height:29px;z-index:3;">Майнинг</a>
+<a id="Button3" href="./bobr.html" onclick="ShowObjectWithEffect('wb_quests_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:86px;height:29px;z-index:4;">Задания</a>
 </div>
 </div>
 </div>
@@ -52,7 +51,7 @@
 </div>
 <div id="wb_Image1" style="display:inline-block;width:290px;height:290px;z-index:7;">
 <img src="images/bober.jpg" id="Image1" alt="" width="290" height="290">
-
+<script src="vibrate.js"></script>
 </div>
 <div id="wb_LayoutGrid6">
 <div id="LayoutGrid6">
@@ -94,31 +93,6 @@
 </body>
 </html>
 </div>
-<div id="Html2" style="display:inline-block;width:171px;height:35px;z-index:12">
-
-    </head>
-<body>
-
-<div id="energy">1000/1000</div>
-
-<script>
-    let maxEnergy = 1000;
-    let currentEnergy = maxEnergy;
-
-    document.getElementById('Image1').addEventListener('click', function() {
-        if (currentEnergy > 0) {
-
-            currentEnergy--;
-            document.getElementById('energy').innerText = + currentEnergy + '/' + maxEnergy;
-        } else {
-            alert('Бобры закончились!');
-        }
-    });
-</script>
-
-</body>
-</html>
-</div>
 </div>
 </div>
 </div>
@@ -127,7 +101,7 @@
 <div id="mining_grid">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:13;">
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:12;">
 <img src="images/ai__JY1H.png" id="Image3" alt="" width="290" height="290">
 </div>
 </div>
@@ -138,7 +112,7 @@
 <div id="quests_grid">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image4" style="display:block;width:100%;height:auto;z-index:14;">
+<div id="wb_Image4" style="display:block;width:100%;height:auto;z-index:13;">
 <img src="images/ai__JY1H.png" id="Image4" alt="" width="290" height="290">
 </div>
 </div>

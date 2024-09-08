@@ -149,27 +149,6 @@ body
    width: 100% !important;
 }
 }
-#wb_Image2
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image2
-{
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
-   display: inline-block;
-   width: 35px;
-   height: 35px;
-   vertical-align: top;
-}
-#Image2:active
-{
-   filter: 4;
-   transition: filter 500ms linear 0ms;
-}
 #wb_LayoutGrid1
 {
    clear: both;
@@ -389,68 +368,6 @@ body
    width: 100% !important;
 }
 }
-#wb_Image1
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image1
-{
-   border: 0px solid #000000;
-   border-radius: 200px;
-   padding: 0;
-   animation: animate-fade-in-left 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
-   box-shadow: 0px 0px 20px #000000;
-   display: inline-block;
-   width: 290px;
-   height: 290px;
-   vertical-align: top;
-}
-#Image1:active
-{
-   padding-top: 2px;
-   transition: padding-top 15ms linear 0ms;
-}
-#Image1
-{
-   padding-top: 0px;
-   transition: padding-top 15ms linear 0ms;
-}
-#Button2
-{
-   box-sizing: border-box;
-   line-height: 25px;
-   text-decoration: none;
-   vertical-align: top;
-   border: 1px solid rgba(255,140,0,0.00);
-   border-radius: 0px;
-   background-color: transparent;
-   background-image: none;
-   color: #F5F5F5;
-   font-family: Bahnschrift;
-   font-weight: normal;
-   font-style: normal;
-   font-size: 16px;
-   padding: 1px 6px 1px 6px;
-   text-align: center;
-   -webkit-appearance: none;
-   margin: 0;
-   animation: animate-fade-in 1000ms linear 0ms 1 normal both;
-}
-#Button2:focus
-{
-   outline: 0;
-}
-#Button2:hover
-{
-   border-bottom-color: #FF8C00;
-   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
-}
-#Button2
-{
-   border-bottom-color: rgba(255,255,255,0.00);
-   transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
-}
 #Button1
 {
    box-sizing: border-box;
@@ -520,27 +437,6 @@ body
 {
    border-bottom-color: rgba(255,255,255,0.00);
    transition: border-bottom-color 350ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
-}
-#wb_Text1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text1 div
-{
-   text-align: center;
-}
-#wb_Text1
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
 }
 #wb_Text2 
 {
@@ -811,9 +707,22 @@ body
    margin-right: auto;
    vertical-align: top;
 }
-        #counter {
-            font-size: 16px;
-            margin-bottom: 20px;
-            color: #FF9F14;
-        }
-    
+#wb_Image1
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
