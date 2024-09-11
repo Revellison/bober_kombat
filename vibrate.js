@@ -1,6 +1,6 @@
 function handleClick() {
     if (navigator.vibrate) {
-        navigator.vibrate(100);
+        navigator.vibrate(60);
     }
 }
 

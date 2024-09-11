@@ -13,6 +13,11 @@
    0% { transform: translate(-100px,0px) rotate(0deg) ; opacity: 0;  }
    100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
 }
+@keyframes animate-fade-in-up
+{
+   0% { transform: translate(0px,100px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
 h1, .h1
 {
    font-family: Arial;
