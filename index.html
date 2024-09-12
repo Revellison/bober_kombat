@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <title>bober_kombat</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome6.min.css" rel="stylesheet">
 <link href="bibrik_kombat.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <link href="tap.css" rel="stylesheet">
@@ -80,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div style="color:#FF8000;font-size:16px;font-family:Bahnschrift;font-weight:normal;font-style:normal;text-align:center;text-decoration:none" id="typewriter"></div>
 <script>
 var ch = 0;
-var txt = '"kyberbober v1.0.1" demo';
+var txt = '"kyberbober v1.0.1.1" beta';
 var speed = 50;
 var pause = 5000;
 
@@ -117,10 +118,7 @@ typeWriterInit();
 <div id="nextbobr2">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text2" onclick="window.location.href='https://t.me/boberkombatd';return false;">
-<span style="color:#FF8000;font-family:Arial;font-size:16px;"><strong>Отслеживать бобра<br>(click)<br></strong></span>
-</div>
-<a id="Button10" href="#" onclick="ShowObjectWithEffect('wb_nextbobr2', 0, 'fade', 1);ShowObjectWithEffect('wb_textbobr1', 0, 'fade', 1);return false;" style="display:inline-block;width:146px;height:29px;z-index:2;">Отключить текст</a>
+<a id="Button10" href="#" onclick="ShowObjectWithEffect('wb_nextbobr2', 0, 'fade', 1);ShowObjectWithEffect('wb_textbobr1', 0, 'fade', 1);return false;" style="display:inline-block;width:146px;height:29px;z-index:1;">Отключить текст</a>
 </div>
 </div>
 </div>
@@ -129,9 +127,9 @@ typeWriterInit();
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<a id="Button2" href="" onclick="ShowObjectWithEffect('wb_LayoutGrid2', 1, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:82px;height:29px;z-index:4;">Бобер</a>
-<a id="Button1" href="#" onclick="ShowObjectWithEffect('wb_mining_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:109px;height:29px;z-index:5;">Майнинг</a>
-<a id="Button4" href="#" onclick="ShowObjectWithEffect('wb_quests_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:86px;height:29px;z-index:6;">Лидеры</a>
+<a id="Button2" href="" onclick="ShowObjectWithEffect('wb_LayoutGrid2', 1, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:82px;height:29px;z-index:5;">Бобер</a>
+<a id="Button1" href="#" onclick="ShowObjectWithEffect('wb_mining_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:109px;height:29px;z-index:6;">Майнинг</a>
+<a id="Button4" href="#" onclick="ShowObjectWithEffect('wb_quests_grid', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;" style="display:inline-block;width:86px;height:29px;z-index:7;">Лидеры</a>
 </div>
 </div>
 </div>
@@ -144,14 +142,18 @@ typeWriterInit();
 <div id="LayoutGrid3">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image2" style="display:inline-block;width:35px;height:35px;z-index:7;">
+<div id="wb_Image2" style="display:inline-block;width:35px;height:35px;z-index:8;">
 <a href="https://revellison.github.io/cmcraftsite/ "><img src="images/pirog.webp" id="Image2" alt="" width="35" height="35"></a>
 </div>
+<hr id="HorizontalLine1" style="display:inline-block;width:219px;z-index:9;">
+<div id="wb_Icon1" style="display:inline-block;width:31px;height:37px;text-align:center;z-index:10;">
+<a href="https://t.me/boberkombatd"><div id="Icon1"><i class="fa fa-brands fa-telegram"></i></div></a>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_Image1" style="display:inline-block;width:290px;height:290px;z-index:11;">
+</div>
+<div id="wb_Image1" style="display:inline-block;width:290px;height:290px;z-index:14;">
 <img src="images/bober.jpg" id="Image1" alt="" width="290" height="290">
 <script src="vibrate.js"></script>
 </div>
@@ -166,7 +168,7 @@ typeWriterInit();
 <div id="wb_Text1">
 <span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">Бобров натапано</span>
 </div>
-<div id="Html1" style="display:inline-block;width:224px;height:40px;z-index:14">
+<div id="Html1" style="display:inline-block;width:224px;height:40px;z-index:17">
 
 <head>
     </head>
@@ -194,7 +196,7 @@ typeWriterInit();
 <div id="wb_Text6">
 <span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">До бобрового краха:</span>
 </div>
-<div id="wb_JavaScript1" style="display:block;width:100%;z-index:9;">
+<div id="wb_JavaScript1" style="display:block;width:100%;z-index:12;">
 <div style="color:#FF8000;font-size:16px;font-family:Bahnschrift;font-weight:bold;font-style:normal;text-align:center;text-decoration:none" id="countdown"></div>
 <script>
 var strTargetDate = "10/11/2024 12:00 AM";
@@ -256,25 +258,13 @@ initCountDown();
 <div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
-<input type="submit" id="Button3" onclick="$('#buy1').modal('show');return false;" name="" value="" style="display:inline-block;width:83px;height:87px;z-index:18;">
-<input type="submit" id="Button5" onclick="$('#buy2').modal('show');return false;" name="" value="" style="display:inline-block;width:79px;height:88px;z-index:19;">
-<input type="submit" id="Button6" onclick="$('#buy3').modal('show');return false;" name="" value="" style="display:inline-block;width:87px;height:87px;z-index:20;">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid9">
-<div id="LayoutGrid9">
-<div class="row">
-<div class="col-1">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid10">
-<div id="LayoutGrid10">
-<div class="row">
-<div class="col-1">
+<input type="submit" id="Button3" onclick="$('#buy1').modal('show');return false;" name="" value="" style="display:inline-block;width:83px;height:87px;z-index:21;">
+<input type="submit" id="Button5" onclick="$('#buy2').modal('show');return false;" name="" value="" style="display:inline-block;width:79px;height:88px;z-index:22;">
+<input type="submit" id="Button6" onclick="$('#buy3').modal('show');return false;" name="" value="" style="display:inline-block;width:87px;height:87px;z-index:23;">
+<hr id="HorizontalLine2" style="display:inline-block;width:250px;z-index:24;">
+<input type="submit" id="Button11" onclick="$('#buy3').modal('show');return false;" name="" value="" style="display:inline-block;width:87px;height:87px;z-index:25;">
+<input type="submit" id="Button9" onclick="$('#buy3').modal('show');return false;" name="" value="" style="display:inline-block;width:87px;height:87px;z-index:26;">
+<input type="submit" id="Button12" onclick="$('#buy3').modal('show');return false;" name="" value="" style="display:inline-block;width:87px;height:87px;z-index:27;">
 </div>
 </div>
 </div>
@@ -287,7 +277,7 @@ initCountDown();
 <div id="quests_grid">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:24;">
+<div id="wb_Image7" style="display:block;width:100%;height:auto;z-index:29;">
 <img src="images/ai__NSH4.png" id="Image7" alt="" width="290" height="290">
 </div>
 </div>
@@ -311,7 +301,7 @@ initCountDown();
 <div id="LayoutGrid13">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image3" style="display:inline-block;width:86px;height:86px;z-index:28;">
+<div id="wb_Image3" style="display:inline-block;width:86px;height:86px;z-index:37;">
 <img src="images/ai__B61N.png" id="Image3" alt="" width="86" height="86">
 </div>
 </div>
@@ -320,6 +310,9 @@ initCountDown();
 </div>
 <div id="wb_Text3">
 <span style="color:#F5F5F5;font-family:Bahnschrift;font-size:16px;">Видеокарта с бобром</span>
+</div>
+<div id="wb_Text2">
+<span style="color:#B22222;font-family:Bahnschrift;font-size:16px;">Нет в наличии</span>
 </div>
 <div id="wb_LayoutGrid15">
 <div id="LayoutGrid15">
@@ -333,7 +326,7 @@ initCountDown();
 <div id="LayoutGrid14">
 <div class="row">
 <div class="col-1">
-<input type="submit" id="Button14" onclick="ShowObject('onas', 1);return false;" name="" value="Купить" style="display:inline-block;width:196px;height:33px;z-index:29;">
+<input type="submit" id="Button14" onclick="ShowObject('onas', 1);return false;" name="" value="Купить" style="display:inline-block;width:192px;height:33px;z-index:38;">
 </div>
 </div>
 </div>
@@ -359,7 +352,7 @@ initCountDown();
 <div id="LayoutGrid17">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image5" style="display:inline-block;width:86px;height:86px;z-index:37;">
+<div id="wb_Image5" style="display:inline-block;width:86px;height:86px;z-index:47;">
 <img src="images/ai__B2Q0.png" id="Image5" alt="" width="86" height="86">
 </div>
 </div>
@@ -368,6 +361,9 @@ initCountDown();
 </div>
 <div id="wb_Text4">
 <span style="color:#F5F5F5;font-family:Bahnschrift;font-size:16px;">Сумка из крокодила</span>
+</div>
+<div id="wb_Text7">
+<span style="color:#B22222;font-family:Bahnschrift;font-size:16px;">Нет в наличии</span>
 </div>
 <div id="wb_LayoutGrid18">
 <div id="LayoutGrid18">
@@ -381,7 +377,7 @@ initCountDown();
 <div id="LayoutGrid19">
 <div class="row">
 <div class="col-1">
-<input type="submit" id="Button7" onclick="ShowObject('onas', 1);return false;" name="" value="Купить" style="display:inline-block;width:196px;height:33px;z-index:38;">
+<input type="submit" id="Button7" onclick="ShowObject('onas', 1);return false;" name="" value="Купить" style="display:inline-block;width:192px;height:33px;z-index:48;">
 </div>
 </div>
 </div>
@@ -407,7 +403,7 @@ initCountDown();
 <div id="LayoutGrid21">
 <div class="row">
 <div class="col-1">
-<div id="wb_Image6" style="display:inline-block;width:86px;height:86px;z-index:46;">
+<div id="wb_Image6" style="display:inline-block;width:86px;height:86px;z-index:57;">
 <img src="images/ai__P0EI.png" id="Image6" alt="" width="86" height="86">
 </div>
 </div>
@@ -416,6 +412,9 @@ initCountDown();
 </div>
 <div id="wb_Text5">
 <span style="color:#F5F5F5;font-family:Bahnschrift;font-size:16px;">Дедик</span>
+</div>
+<div id="wb_Text8">
+<span style="color:#B22222;font-family:Bahnschrift;font-size:16px;">Нет в наличии</span>
 </div>
 <div id="wb_LayoutGrid22">
 <div id="LayoutGrid22">
@@ -429,7 +428,7 @@ initCountDown();
 <div id="LayoutGrid23">
 <div class="row">
 <div class="col-1">
-<input type="submit" id="Button8" onclick="ShowObject('onas', 1);return false;" name="" value="Купить" style="display:inline-block;width:192px;height:33px;z-index:47;">
+<input type="submit" id="Button8" onclick="ShowObject('onas', 1);return false;" name="" value="Купить" style="display:inline-block;width:192px;height:33px;z-index:58;">
 </div>
 </div>
 </div>
