@@ -1,0 +1,457 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bober_kombat</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="bibrik_kombat.css" rel="stylesheet">
+<link href="bober.css" rel="stylesheet">
+<link href="tap.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var buy1 = document.querySelector('#buy1');
+   var bsbuy1 = new bootstrap.Modal(buy1);
+   buy1.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#buy1 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   buy1.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#buy1 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+   var buy2 = document.querySelector('#buy2');
+   var bsbuy2 = new bootstrap.Modal(buy2);
+   buy2.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#buy2 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   buy2.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#buy2 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+   var buy3 = document.querySelector('#buy3');
+   var bsbuy3 = new bootstrap.Modal(buy3);
+   buy3.addEventListener('show.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#buy3 .modal-dialog');
+      dlg.classList.remove('animate-hide');
+      dlg.classList.add('animate-show');
+   });
+   buy3.addEventListener('hide.bs.modal', function(e)
+   {
+      var dlg = document.querySelector('#buy3 .modal-dialog');
+      dlg.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+      dlg.classList.add('animate-hide');
+   });
+});
+</script>
+</head>
+<body>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_nextbobr2">
+<div id="nextbobr2">
+<div class="row">
+<div class="col-1">
+<a id="Button10" href="./index.html" onclick="ShowObjectWithEffect('wb_nextbobr2', 0, 'fade', 1);ShowObjectWithEffect('wb_textbobr1', 0, 'fade', 1);return false;">Отключить текст</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_textbobr1">
+<div id="textbobr1">
+<div class="row">
+<div class="col-1">
+<div id="wb_JavaScript2">
+<div id="typewriter"></div>
+<script>
+var ch = 0;
+var txt = '"kyberbober v1.1" beta';
+var speed = 50;
+var pause = 5000;
+
+function typeWriterInit()
+{
+   ch = 0; 
+   document.getElementById("typewriter").innerHTML = '';
+   typeWriter();
+}
+function typeWriter() 
+{
+   if (ch < txt.length) 
+   {
+      document.getElementById("typewriter").innerHTML += txt.charAt(ch);
+      ch++;
+      setTimeout(typeWriter, speed);
+   }
+   else
+   {
+      if (pause > 0)
+      {
+          setTimeout(typeWriterInit, pause);
+      }
+   }
+}
+typeWriterInit();
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<a id="Button2" href="" onclick="ShowObjectWithEffect('wb_LayoutGrid2', 1, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_miningtimed', 0, 'fade', 1);return false;">Бобер</a>
+<a id="Button1" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;">Майнинг</a>
+<a id="Button4" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;">Лидеры</a>
+<a id="Button13" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;">Airdrop</a>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image2">
+<a href="https://revellison.github.io/cmcraftsite/ "><img src="images/pirog.webp" id="Image2" alt="" width="35" height="35"></a>
+</div>
+<hr id="HorizontalLine1">
+<div id="wb_Icon1">
+<a href="https://t.me/boberkombatd"><div id="Icon1"><i class="fa fa-brands fa-telegram"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Image1">
+<img src="images/bober.jpg" id="Image1" alt="" width="213" height="213">
+<script src="vibrate.js"></script>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text1">
+<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">Бобров натапано</span>
+</div>
+<div id="Html1">
+
+<head>
+    </head>
+<body>
+
+<div id="counter">0</div>
+<script>
+   
+    let count = localStorage.getItem('clickCount') ? parseInt(localStorage.getItem('clickCount')) : 0;
+    document.getElementById('counter').innerText = count;
+    document.getElementById('Image1').addEventListener('click', function() {
+        count++;
+        document.getElementById('counter').innerText = count;
+        localStorage.setItem('clickCount', count);
+    });
+</script>
+
+</body>
+</html>
+</div>
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text6">
+<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">До бобрового краха:</span>
+</div>
+<div id="wb_JavaScript1">
+<div id="countdown"></div>
+<script>
+var strTargetDate = "11/12/2024 12:00 AM";
+var strFormat = "$DAYS$ Дней $HOURS$ Часов $MINUTES$ Минут";
+var strExpired = "Отсоси";
+
+function doCountDown(seconds) 
+{
+   if (seconds < 0) 
+   {
+      document.getElementById("countdown").innerHTML = strExpired;
+      return;
+   }
+   var strMsg = strFormat;
+   strMsg = strMsg.replace("$DAYS$",    ((Math.floor(seconds/86400))%100000).toString());
+   strMsg = strMsg.replace("$HOURS$",   ((Math.floor(seconds/3600))%24).toString());
+   strMsg = strMsg.replace("$MINUTES$", ((Math.floor(seconds/60))%60).toString());
+   strMsg = strMsg.replace("$SECONDS$",  ((Math.floor(seconds))%60).toString()); 
+
+   document.getElementById("countdown").innerHTML = strMsg;
+
+   setTimeout("doCountDown(" + (seconds-1).toString() + ")", 1000);
+}
+function initCountDown()
+{
+   var dtTarget = new Date(strTargetDate);
+   var dtNow = new Date();
+   var dtDiff = new Date(dtTarget-dtNow);
+   var totalSeconds = Math.floor(dtDiff.valueOf()/1000);
+
+   doCountDown(totalSeconds);
+}
+initCountDown();
+</script>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid12">
+<div id="LayoutGrid12">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_mining_grid">
+<div id="mining_grid">
+<div class="row">
+<div class="col-1">
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+<input type="submit" id="Button3" onclick="$('#buy1').modal('show');return false;" name="" value="">
+<input type="submit" id="Button5" onclick="$('#buy2').modal('show');return false;" name="" value="">
+<input type="submit" id="Button6" onclick="$('#buy3').modal('show');return false;" name="" value="">
+<hr id="HorizontalLine2">
+<input type="submit" id="Button11" onclick="$('#buy3').modal('show');return false;" name="" value="">
+<input type="submit" id="Button9" onclick="$('#buy3').modal('show');return false;" name="" value="">
+<input type="submit" id="Button12" onclick="$('#buy3').modal('show');return false;" name="" value="">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_quests_grid">
+<div id="quests_grid">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image7">
+<img src="images/ai__NSH4.png" id="Image7" alt="" width="290" height="290">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="buy1" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_LayoutGrid11">
+<div id="LayoutGrid11">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid13">
+<div id="LayoutGrid13">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image3">
+<img src="images/ai__B61N.png" id="Image3" alt="" width="86" height="86">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text3">
+<span style="color:#F5F5F5;font-family:Bahnschrift;font-size:16px;">Видеокарта с бобром</span>
+</div>
+<div id="wb_Text2">
+<span style="color:#B22222;font-family:Bahnschrift;font-size:16px;">Нет в наличии</span>
+</div>
+<div id="wb_LayoutGrid15">
+<div id="LayoutGrid15">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid14">
+<div id="LayoutGrid14">
+<div class="row">
+<div class="col-1">
+<input type="submit" id="Button14" onclick="ShowObject('onas', 1);return false;" name="" value="Купить">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="buy2" class="modal fade" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_LayoutGrid16">
+<div id="LayoutGrid16">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid17">
+<div id="LayoutGrid17">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image5">
+<img src="images/ai__B2Q0.png" id="Image5" alt="" width="86" height="86">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text4">
+<span style="color:#F5F5F5;font-family:Bahnschrift;font-size:16px;">Сумка из крокодила</span>
+</div>
+<div id="wb_Text7">
+<span style="color:#B22222;font-family:Bahnschrift;font-size:16px;">Нет в наличии</span>
+</div>
+<div id="wb_LayoutGrid18">
+<div id="LayoutGrid18">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid19">
+<div id="LayoutGrid19">
+<div class="row">
+<div class="col-1">
+<input type="submit" id="Button7" onclick="ShowObject('onas', 1);return false;" name="" value="Купить">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="buy3" class="modal fade" role="dialog" onclick="$('#buy3').modal('show');return false;">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<div class="modal-body">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<div id="wb_LayoutGrid20">
+<div id="LayoutGrid20">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid21">
+<div id="LayoutGrid21">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image6">
+<img src="images/ai__P0EI.png" id="Image6" alt="" width="86" height="86">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Text5">
+<span style="color:#F5F5F5;font-family:Bahnschrift;font-size:16px;">Дедик</span>
+</div>
+<div id="wb_Text8">
+<span style="color:#B22222;font-family:Bahnschrift;font-size:16px;">Нет в наличии</span>
+</div>
+<div id="wb_LayoutGrid22">
+<div id="LayoutGrid22">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid23">
+<div id="LayoutGrid23">
+<div class="row">
+<div class="col-1">
+<input type="submit" id="Button8" onclick="ShowObject('onas', 1);return false;" name="" value="Купить">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_miningtimed">
+<div id="miningtimed">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image4">
+<img src="images/wired-outline-45-clock-time-hover-pinch.gif" id="Image4" alt="" width="290" height="290">
+</div>
+<div id="wb_Text9">
+<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">В разработке</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
