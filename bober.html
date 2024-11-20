@@ -8,7 +8,6 @@
 <link href="fontawesome6.min.css" rel="stylesheet">
 <link href="bibrik_kombat.css" rel="stylesheet">
 <link href="bober.css" rel="stylesheet">
-<link href="tap.css" rel="stylesheet">
 <script src="jquery-3.7.1.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script src="popper.min.js"></script>
@@ -91,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function(event)
 <div id="typewriter"></div>
 <script>
 var ch = 0;
-var txt = '"kyberbober v1.1" beta';
+var txt = '&*#^*&@^$';
 var speed = 50;
 var pause = 5000;
 
@@ -128,10 +127,10 @@ typeWriterInit();
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<a id="Button2" href="" onclick="ShowObjectWithEffect('wb_LayoutGrid2', 1, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_miningtimed', 0, 'fade', 1);return false;">Бобер</a>
-<a id="Button1" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;">Майнинг</a>
-<a id="Button4" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;">Лидеры</a>
-<a id="Button13" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;">Airdrop</a>
+<a id="Button2" href="" onclick="ShowObjectWithEffect('wb_LayoutGrid2', 1, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);ShowObjectWithEffect('wb_miningtimed', 0, 'fade', 1);return false;">Боб&р</a>
+<a id="Button1" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_quests_grid', 0, 'fade', 1);return false;">???</a>
+<a id="Button4" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;">???</a>
+<a id="Button13" href="" onclick="ShowObjectWithEffect('wb_miningtimed', 1, 'fade', 1);ShowObjectWithEffect('wb_LayoutGrid2', 0, 'fade', 1);ShowObjectWithEffect('wb_mining_grid', 0, 'fade', 1);return false;">???</a>
 </div>
 </div>
 </div>
@@ -157,7 +156,47 @@ typeWriterInit();
 </div>
 <div id="wb_Image1">
 <img src="images/bober.jpg" id="Image1" alt="" width="213" height="213">
-<script src="vibrate.js"></script>
+<script>
+        // Получаем данные о пользователе из Telegram
+        const user = window.Telegram.WebApp.initDataUnsafe.user;
+        document.getElementById('username').innerText = user.first_name;
+
+        // Функция для отправки клика на сервер
+        function sendClick() {
+            fetch("/click", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(user)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    getUserPoints();  // Обновляем количество поинтов после клика
+                } else {
+                    alert("Ошибка: " + data.error);
+                }
+            });
+        }
+
+        // Функция для получения текущего количества поинтов пользователя
+        function getUserPoints() {
+            fetch(`/user_points?telegram_id=${user.id}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    document.getElementById('points-count').innerText = data.points;
+                }
+            });
+        }
+
+        // Добавляем обработчик клика на изображение
+        document.getElementById('bober-img').addEventListener('click', sendClick);
+
+        // Загружаем количество поинтов при загрузке страницы
+        getUserPoints();
+    </script>
 </div>
 <div id="wb_LayoutGrid5">
 <div id="LayoutGrid5">
@@ -168,7 +207,7 @@ typeWriterInit();
 </div>
 </div>
 <div id="wb_Text1">
-<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">Бобров натапано</span>
+<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">Бобров $#</span>
 </div>
 <div id="Html1">
 
@@ -196,14 +235,14 @@ typeWriterInit();
 <div class="row">
 <div class="col-1">
 <div id="wb_Text6">
-<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">До бобрового краха:</span>
+<span style="color:#FF8000;font-family:Bahnschrift;font-size:16px;">До бобрового прихода:</span>
 </div>
 <div id="wb_JavaScript1">
 <div id="countdown"></div>
 <script>
-var strTargetDate = "11/12/2024 12:00 AM";
+var strTargetDate = "25/01/2025 12:00 AM";
 var strFormat = "$DAYS$ Дней $HOURS$ Часов $MINUTES$ Минут";
-var strExpired = "Отсоси";
+var strExpired = "???";
 
 function doCountDown(seconds) 
 {
